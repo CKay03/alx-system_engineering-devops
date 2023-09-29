@@ -1,2 +1,2 @@
 #!/bin/bash
-(ls -A -d . .. | (ls -A -d .[^.]* | cat) | ls -A -d [^.]*) | tr '\n' ',' | sed -e 's/,$/\n/' -e 's/[^,]*\//&\//g'
+ls -a | grep -E '^[0-9A-Za-z]' | sort -d -f | sed 's/$/,/' | tr -d '\n' | sed 's/,$/\n/
