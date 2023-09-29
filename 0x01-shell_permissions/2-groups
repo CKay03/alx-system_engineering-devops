@@ -1,2 +1,2 @@
 #!/bin/bash
-./get_user_groups.sh
+groups $root
