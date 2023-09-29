@@ -1,2 +1,2 @@
 #!/bin/bash
-(ls -Ap | grep -E '^[0-9A-Za-z]' | sort -d | tr '\n' ','; ls -Ap | grep '/$' | sort -d | tr '\n' ','; ls -Ap | grep -E '^\.{1,2}/' | tr '\n' ',') | sed 's/,$/\n/'
+ls -Ap1 | tr '\n' ',' | sed -e 's/,$/\n/'
