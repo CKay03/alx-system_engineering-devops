@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Ap | grep -E '/$|\.' | LC_ALL=C sort -t/ -k2,2 | tr '\n' ',' 
+( ls -a1p | grep -E '/$|^\.|^..' | LC_COLLATE=C sort -df | tr '\n' ',' ; echo ) 
