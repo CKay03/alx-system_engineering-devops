@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -mindepth 1 -maxdepth 1 -printf "%p,/"
+ls -Ap | grep -E '/$|\.' | LC_ALL=C sort -t/ -k2,2 | tr '\n' ',' 
