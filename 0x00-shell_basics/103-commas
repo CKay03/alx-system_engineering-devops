@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | sed 's/\([^0-9A-Za-z]\)/\\\1/g' | sed '/^\.\.$/d' | sed '/^.$/d' | LC_COLLATE=C sort | tr '\n' ',' | sed 's/,$/\n/' | sed 's/\./\n/g' | sed '/^$/d' | sed 's/$/\//'
+find . -mindepth 1 -maxdepth 1 -printf "%p,/"
