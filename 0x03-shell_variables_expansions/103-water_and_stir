@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%x\n" $((2#"$WATER" + 8#"$STIR"))
+WATER="water" STIR="stir" printf "#base#bestchol#%d\n" "$((#base#10#$WATER + #base#10#$STIR))"
