@@ -1,2 +1,2 @@
 #!/bin/bash
-WATER="water" STIR="stir" printf "#base#bestchol#%d\n" "$((#base#10#$WATER + #base#10#$STIR))"
+RESULT=$((16#$WATER + 8#$STIR))
