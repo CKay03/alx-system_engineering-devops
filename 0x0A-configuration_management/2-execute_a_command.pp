@@ -1,7 +1,4 @@
-# creates a file 
-file { '/tmp/school':
-	mode 	=> '0744',
-	owner 	=> 'www-data',
-	group 	=> 'www-data',
-	content => 'I love Puppet'
+# Executes a command
+exec { 'pkill killmenow':
+	path => '/usr/bin:/usr/sbin:/bin'
 }
